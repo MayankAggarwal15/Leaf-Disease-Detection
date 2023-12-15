@@ -1,0 +1,96 @@
+body {
+    background-image: url("/static/images/background.jpeg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controls {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px 0 rgba(31, 38, 135, 1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    max-height: 100%;
+    max-width: 100%; 
+  }
+  
+  .choosen{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    padding: 0 5vh 0 5vh;
+    font-family: "Algerian";
+    font-size: 10vh;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-family: "Times New Roman";
+    font-size: 7vh;
+    font-weight: bolder;
+  }
+
+  h3 {
+    font-family: "Calibri";
+    font-size: 5vh;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: "Cambria";
+    font-size: 5vh;
+    font-weight: bold;
+  }
+  
+  input{
+    padding: 2vh;
+    font-family: "Calibri";
+    font-size: 4vh;
+    font-weight: normal;
+  }
+
+  label{
+    padding: 2vh;
+    font-family: "Calibri";
+    font-size: 4vh;
+    font-weight: bold;
+  }
+
+  #error{
+    color: red;
+  }
+
+  #uploadedImage {
+    width: 60vh;
+    height: 40vh;
+    border: 2px solid #ccc;
+  }
+  
+
+  .glow-on-hover {
+    padding: 2vh;
+    margin: 5vh;
+    font-family: 'Cambria';
+    font-weight: bold;
+    font-size: 5vh;
+    width: 50vh;
+    height: 10vh;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:hover {
+    background: black;
+  }
+  

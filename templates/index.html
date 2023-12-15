@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon/plant.png" type="image/png">
+
+    <title>Leaf Disease Detection</title>
+
+</head>
+
+<body>
+    <div class="controls">
+
+        <h1>LEAF DISEASE DETECTION</h1>
+        <div class="choosen">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <label for="image">Upload Image:</label>
+                <input type="file" id="fileInput" name="image" accept="image/*">
+                <br>
+                <input class="glow-on-hover" type="submit" value="Predict Leaf Disease">
+            </form>
+        </div>
+
+        {% if error %}
+        <p id="error">{{ error }}</p>
+        {% endif %}
+
+        {% if uploaded_image %}
+        <h2>PREDICTION RESULTS</h2>
+        <h3>IMAGE UPLOADED</h3>
+        <img id="uploadedImage" src="{{uploaded_image}}" alt="Uploaded Image">
+        {% endif %}
+
+
+        {% if prediction %}
+        <p>Leaf : {{ prediction.Leaf }}</p>
+        <p>Status : {{ prediction.Status }}</p>
+        <p>Disease : {{ prediction.Disease }}</p>
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
