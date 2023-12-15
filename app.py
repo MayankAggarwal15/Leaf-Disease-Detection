@@ -102,6 +102,6 @@ labels = {'Apple___Apple Scab': 0,
  'Tomato___Tomato Yellow Leaf Curl Virus': 37}
 
 
-if __name__ == "__main__":
-    flask_app.run(debug=True)
+# if __name__ == "__main__":
+#     flask_app.run(debug=True)
 
