@@ -1,2 +1,4 @@
-
-gunicorn==19.7.1
+tensorflow
+flask
+pickle
+numpy
