@@ -9,7 +9,7 @@ from flask import Flask, request, render_template, send_from_directory
 flask_app = Flask(__name__)
 
 # Load model
-model = pickle.load(open("./Model/Leaf Disease Detection Model.pkl", "rb"))
+model = pickle.load(open("Leaf Disease Detection Model.pkl", "rb"))
 
 @flask_app.route("/")
 
